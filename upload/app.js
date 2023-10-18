@@ -17,14 +17,14 @@ const upload = multer({
 
 const pool = mysql.createPool({
   connectionLimit: 10,
-  host: '34.121.93.222',
+  host: 'mysql',
   user: 'root',
   password: 'password',
   database: 'video_streaming'
 });
 
 const sshConfig = {
-  host: '34.168.79.180',
+  host: 'file_system',
   port: 22,
   username: 'fileuser',
   password: 'fileuser'

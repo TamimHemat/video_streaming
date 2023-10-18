@@ -24,7 +24,7 @@ app.post('/auth/login', (req, res) => {
 
   // Query the database to check if the username and password are correct
   pool.query('SELECT * FROM user WHERE username = ? AND password = ?', [username, password], (error, results, fields) => {
-    if (error) throw error;
+    // if (error) throw error;
 
     if (results.length > 0) {
       res.redirect("/upload");

@@ -1,5 +1,10 @@
 version: '2'
 services:
+  nginx:
+    container_name: nginx
+    image: tamimhemat/acit3495:nginx
+    ports:
+      - 80:80
   mysql:
     container_name: mysql
     image: tamimhemat/acit3495:mysql
